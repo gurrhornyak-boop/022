@@ -1,255 +1,194 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang='pt-BR'>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<title>Oferta Especial</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
--webkit-tap-highlight-color:transparent;
-}
-
-body{
-background:linear-gradient(180deg,#4f46e5,#2563eb,#7c3aed);
-padding:12px;
-min-height:100vh;
-}
-
-.container{
-width:100%;
-max-width:430px;
-margin:auto;
-}
-
-.alert{
-background:#ff0000;
-color:#fff;
-font-weight:800;
-font-size:13px;
-padding:12px;
-text-align:center;
-border-radius:50px;
-margin-top:8px;
-margin-bottom:15px;
-animation:pulse 1s infinite;
-}
-
-@keyframes pulse{
-50%{
-transform:scale(1.02);
-}
-}
-
-.card{
-background:#fff;
-padding:22px;
-border-radius:30px;
-text-align:center;
-box-shadow:0 10px 40px rgba(0,0,0,.25);
-}
-
-h1{
-font-size:28px;
-line-height:33px;
-color:#111;
-font-weight:800;
-margin-bottom:10px;
-}
-
-.sub{
-font-size:14px;
-color:#666;
-margin-bottom:15px;
-}
-
-.old{
-color:#999;
-font-size:18px;
-text-decoration:line-through;
-}
-
-.price{
-font-size:50px;
-font-weight:800;
-color:#16a34a;
-margin-top:5px;
-}
-
-.timer-box{
-margin-top:18px;
-background:#fff3f3;
-padding:15px;
-border-radius:18px;
-}
-
-.timer-title{
-color:red;
-font-size:15px;
-font-weight:700;
-}
-
-#timer{
-font-size:38px;
-font-weight:800;
-color:red;
-margin-top:5px;
-}
-
-.grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:10px;
-margin-top:20px;
-}
-
-.item{
-background:#f4f4f4;
-padding:14px;
-border-radius:15px;
-font-size:13px;
-font-weight:600;
-}
-
-.btn{
-display:block;
-width:100%;
-padding:18px;
-margin-top:25px;
-border-radius:50px;
-background:linear-gradient(to right,#16a34a,#22c55e);
-color:#fff;
-text-decoration:none;
-font-size:18px;
-font-weight:800;
-box-shadow:0 8px 25px rgba(34,197,94,.4);
-}
-
-.btn:active{
-transform:scale(.98);
-}
-
-.no{
-display:block;
-margin-top:15px;
-font-size:13px;
-text-decoration:none;
-color:#777;
-}
-
-.secure{
-margin-top:18px;
-font-size:12px;
-color:#999;
-}
-
-</style>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='description' content='Cantareira Ensino de Música - Aulas de Canto, Violão, Guitarra, Piano e Teclado em Caieiras/SP. Matrículas abertas!'>
+    <meta name='keywords' content='aula de música caieiras, escola de música caieiras, violão caieiras, canto caieiras, piano caieiras'>
+    <title>Cantareira Ensino de Música | Aulas em Caieiras/SP</title>
+    
+    <link rel='icon' href='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎵</text></svg>'>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primaria: #7c3aed;
+            --secundaria: #6d28d9;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background: white;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .hero {
+            background: linear-gradient(135deg, #7c3aed, #db2777);
+            color: white;
+            padding: 180px 0 120px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3.2rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.35rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 16px 40px;
+            background: white;
+            color: var(--primaria);
+            font-weight: 700;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            margin: 0 10px;
+            transition: 0.3s;
+        }
+        .btn:hover { transform: translateY(-5px); }
+        section { padding: 100px 0; }
+        h2 {
+            text-align: center;
+            font-size: 2.4rem;
+            margin-bottom: 3rem;
+            color: #1e2937;
+        }
+        .info-box {
+            background: #f8fafc;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        footer {
+            background: #1e2937;
+            color: white;
+            padding: 3rem 0 1.5rem;
+            text-align: center;
+            font-size: 0.95rem;
+        }
+        .trust {
+            background: #f1f5f9;
+            padding: 1.5rem 0;
+            text-align: center;
+            font-size: 0.95rem;
+        }
+    </style>
 </head>
 <body>
 
-<div class="container">
+<header>
+    <div class='container' style="display: flex; justify-content: space-between; align-items: center;">
+        <div style="font-size: 1.8rem; font-weight: 700; color: var(--primaria);">🎵 Cantareira Ensino de Música</div>
+        <div>
+            <a href="tel:1170630416" style="margin-right:20px; color:#1e2937; text-decoration:none; font-weight:600;">📞 (11) 7063-0416</a>
+        </div>
+    </div>
+</header>
 
-<div class="alert">
-⚠ OFERTA DISPONÍVEL SOMENTE NESTA TELA
+<div class='hero'>
+    <div class='container'>
+        <h1>Aulas de Música em Caieiras/SP</h1>
+        <p>Canto • Violão • Guitarra • Piano • Teclado • Musicalização Infantil</p>
+        <p style="font-size:1.1rem; opacity:0.95;">Matrículas Abertas 2026</p>
+        
+        <div style="margin-top: 2rem;">
+            <a href="#contato" class='btn'>Fazer Matrícula Agora</a>
+            <a href="tel:1170630416" class='btn' style="background:transparent; border:2px solid white; color:white;">Ligar Agora</a>
+        </div>
+    </div>
 </div>
 
-<div class="card">
+<section class='trust'>
+    <div class='container'>
+        <strong>CNPJ: 48.260.003/0001-90</strong> • Cantareira Ensino de Música Ltda
+    </div>
+</section>
 
-<h1>ESPERE! SUA OFERTA FOI LIBERADA</h1>
+<section id="sobre">
+    <div class='container'>
+        <h2>Sobre a Cantareira Ensino de Música</h2>
+        <div style="max-width: 800px; margin: 0 auto; text-align:center; font-size:1.15rem; line-height:1.8;">
+            <p>Escola de música profissional localizada em Caieiras - SP, com mais de 10 anos de experiência no ensino musical.</p>
+            <p>Oferecemos aulas presenciais de qualidade com professores qualificados e metodologia comprovada.</p>
+        </div>
+    </div>
+</section>
 
-<p class="sub">
-Adicione este benefício exclusivo antes de sair desta página.
-</p>
+<section style="background:#f8fafc;">
+    <div class='container'>
+        <h2>Nossos Cursos</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+            <div class='info-box'>🎤 <strong>Canto</strong></div>
+            <div class='info-box'>🎸 <strong>Violão e Guitarra</strong></div>
+            <div class='info-box'>🎹 <strong>Piano e Teclado</strong></div>
+            <div class='info-box'>👶 <strong>Musicalização Infantil</strong></div>
+        </div>
+    </div>
+</section>
 
-<a href="https://jocular-desenrola.netlify.app/" class="btn">
-SIM, QUERO APROVEITAR
-</a>
+<section id="contato">
+    <div class='container'>
+        <h2>Entre em Contato</h2>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; max-width: 1000px; margin: 0 auto;">
+            
+            <!-- Informações de Contato -->
+            <div>
+                <h3 style="margin-bottom: 1.5rem; color: var(--primaria);">Informações</h3>
+                <p><strong>📍 Endereço:</strong><br>
+                R. Raimundo dos Reis, 886 - Casa 3<br>
+                Caieiras - SP</p><br>
+                
+                <p><strong>📞 Telefone:</strong><br>
+                <a href="tel:1170630416" style="color:var(--primaria); font-size:1.3rem; font-weight:600;">(11) 7063-0416</a></p><br>
+                
+                <p><strong>✉️ E-mail:</strong><br>
+                contato@crevity.com.br</p><br>
+                
+                <p><strong>🕒 Horário:</strong><br>
+                Segunda a Sexta: 09h às 20h<br>
+                Sábado: 09h às 14h</p>
+            </div>
+            
+            <!-- Formulário -->
+            <div>
+                <form action="#" method="POST" style="background:white; padding:2.5rem; border-radius:16px; box-shadow:0 10px 30px rgba(0,0,0,0.1);">
+                    <input type="text" placeholder="Nome completo *" required style="width:100%; padding:14px; margin-bottom:15px; border:1px solid #ddd; border-radius:8px;">
+                    <input type="tel" placeholder="Telefone *" required style="width:100%; padding:14px; margin-bottom:15px; border:1px solid #ddd; border-radius:8px;">
+                    <input type="email" placeholder="E-mail" style="width:100%; padding:14px; margin-bottom:15px; border:1px solid #ddd; border-radius:8px;">
+                    <textarea placeholder="Qual curso tem interesse?" rows="4" style="width:100%; padding:14px; margin-bottom:20px; border:1px solid #ddd; border-radius:8px;"></textarea>
+                    <button type="submit" style="width:100%; padding:16px; background:var(--primaria); color:white; border:none; border-radius:50px; font-weight:700; font-size:1.1rem;">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
 
-<div class="old">
-De R$317,90
-</div>
-
-<div class="price">
-R$98,52
-</div>
-
-<div class="timer-box">
-
-<div class="timer-title">
-Oferta expira em:
-</div>
-
-<div id="timer">
-05:00
-</div>
-
-</div>
-
-<div class="grid">
-
-<div class="item">
-✔ Liberação imediata
-</div>
-
-<div class="item">
-✔ Acesso rápido
-</div>
-
-<div class="item">
-✔ Oferta exclusiva
-</div>
-
-<div class="item">
-✔ Garantia
-</div>
-
-</div>
-
-<a href="https://jocular-desenrola.netlify.app/" class="btn">
-SIM, QUERO APROVEITAR
-</a>
-
-<a href="#" class="no">
-Não, desejo continuar
-</a>
-
-<div class="secure">
-🔒 Navegação segura
-</div>
-
-</div>
-</div>
-
-<script>
-
-let tempo=300;
-
-setInterval(()=>{
-
-tempo--;
-
-let m=Math.floor(tempo/60);
-let s=tempo%60;
-
-document.getElementById("timer").innerHTML=
-(m<10?"0":"")+m+":"+(s<10?"0":"")+s;
-
-if(tempo<=0){
-
-window.location.href="https://jocular-desenrola.netlify.app/";
-
-}
-
-},1000);
-
-</script>
+<footer>
+    <div class='container'>
+        <p><strong>Cantareira Ensino de Música Ltda</strong> • CNPJ 48.260.003/0001-90</p>
+        <p>R. Raimundo dos Reis, 886 - Casa 3, Caieiras - SP</p>
+        <p style="margin-top:10px; opacity:0.8;">&copy; 2026 - Todos os direitos reservados</p>
+    </div>
+</footer>
 
 </body>
 </html>
