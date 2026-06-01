@@ -2,10 +2,11 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<title>Oferta Especial</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<title>Erika Regina Lanches</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap" rel="stylesheet">
 
 <style>
 
@@ -13,243 +14,179 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Poppins',sans-serif;
--webkit-tap-highlight-color:transparent;
+font-family:Poppins;
 }
 
 body{
-background:linear-gradient(180deg,#4f46e5,#2563eb,#7c3aed);
-padding:12px;
-min-height:100vh;
+background:#fff7ed;
 }
 
-.container{
-width:100%;
-max-width:430px;
-margin:auto;
-}
-
-.alert{
-background:#ff0000;
-color:#fff;
-font-weight:800;
-font-size:13px;
-padding:12px;
+header{
+background:linear-gradient(45deg,#ff6b00,#ff2d55);
+padding:70px 20px;
 text-align:center;
-border-radius:50px;
-margin-top:8px;
-margin-bottom:15px;
-animation:pulse 1s infinite;
+color:white;
 }
 
-@keyframes pulse{
-50%{
-transform:scale(1.02);
-}
-}
-
-.card{
-background:#fff;
-padding:22px;
-border-radius:30px;
-text-align:center;
-box-shadow:0 10px 40px rgba(0,0,0,.25);
-}
-
-h1{
-font-size:28px;
-line-height:33px;
-color:#111;
-font-weight:800;
-margin-bottom:10px;
-}
-
-.sub{
-font-size:14px;
-color:#666;
-margin-bottom:15px;
-}
-
-.old{
-color:#999;
-font-size:18px;
-text-decoration:line-through;
-}
-
-.price{
-font-size:50px;
-font-weight:800;
-color:#16a34a;
-margin-top:5px;
-}
-
-.timer-box{
-margin-top:18px;
-background:#fff3f3;
-padding:15px;
-border-radius:18px;
-}
-
-.timer-title{
-color:red;
-font-size:15px;
-font-weight:700;
-}
-
-#timer{
+header h1{
 font-size:38px;
-font-weight:800;
-color:red;
-margin-top:5px;
+font-weight:900;
 }
 
-.grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:10px;
-margin-top:20px;
-}
-
-.item{
-background:#f4f4f4;
-padding:14px;
-border-radius:15px;
-font-size:13px;
-font-weight:600;
+header p{
+margin-top:15px;
+font-size:18px;
 }
 
 .btn{
-display:block;
-width:100%;
-padding:18px;
+display:inline-block;
+padding:15px 35px;
+background:white;
+color:#ff2d55;
 margin-top:25px;
 border-radius:50px;
-background:linear-gradient(to right,#16a34a,#22c55e);
-color:#fff;
+font-weight:bold;
 text-decoration:none;
-font-size:18px;
-font-weight:800;
-box-shadow:0 8px 25px rgba(34,197,94,.4);
 }
 
-.btn:active{
-transform:scale(.98);
+section{
+padding:50px 25px;
 }
 
-.no{
-display:block;
-margin-top:15px;
-font-size:13px;
-text-decoration:none;
-color:#777;
+.titulo{
+font-size:32px;
+margin-bottom:25px;
+color:#222;
+text-align:center;
 }
 
-.secure{
-margin-top:18px;
-font-size:12px;
-color:#999;
+.sobre{
+background:white;
+border-radius:20px;
+padding:30px;
+box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin-top:30px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+.contato{
+background:#222;
+color:white;
+text-align:center;
+padding:60px 20px;
+}
+
+footer{
+background:black;
+color:#aaa;
+padding:20px;
+text-align:center;
 }
 
 </style>
 </head>
+
 <body>
 
-<div class="container">
+<header>
 
-<div class="alert">
-⚠ OFERTA DISPONÍVEL SOMENTE NESTA TELA
+<h1>ERIKA REGINA LOPES LEAL</h1>
+
+<p>Lanches • Sucos • Café • Refeições</p>
+
+<a class="btn" href="#">
+Fazer Pedido
+</a>
+
+</header>
+
+
+<section>
+
+<h2 class="titulo">Sobre Nós</h2>
+
+<div class="sobre">
+
+Somos uma empresa localizada em Santa Cruz dos Milagres - PI especializada em lanches, refeições rápidas, sucos e atendimento de qualidade.
+
+Nosso compromisso é oferecer sabor, qualidade e atendimento aos nossos clientes.
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2 class="titulo">Nosso Cardápio</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🍔 Hambúrguer</h3>
+<p>Lanches preparados com ingredientes selecionados</p>
 </div>
 
 <div class="card">
-
-<h1>ESPERE! SUA OFERTA FOI LIBERADA</h1>
-
-<p class="sub">
-Adicione este benefício exclusivo antes de sair desta página.
-</p>
-
-<a href="https://jocular-desenrola.netlify.app/" class="btn">
-SIM, QUERO APROVEITAR
-</a>
-
-<div class="old">
-De R$7597,90
+<h3>🥤 Sucos</h3>
+<p>Sucos naturais e bebidas geladas</p>
 </div>
 
-<div class="price">
-R$98,52
+<div class="card">
+<h3>☕ Café</h3>
+<p>Cafés e acompanhamentos</p>
 </div>
 
-<div class="timer-box">
-
-<div class="timer-title">
-Oferta expira em:
-</div>
-
-<div id="timer">
-05:00
+<div class="card">
+<h3>🍰 Doces</h3>
+<p>Bolos, sobremesas e confeitaria</p>
 </div>
 
 </div>
 
-<div class="grid">
+</section>
 
-<div class="item">
-✔ Liberação imediata
-</div>
 
-<div class="item">
-✔ Acesso rápido
-</div>
+<section class="contato">
 
-<div class="item">
-✔ Oferta exclusiva
-</div>
+<h2>Contato</h2>
 
-<div class="item">
-✔ Garantia
-</div>
+<br>
 
-</div>
+<p>📍 Rua Antonio Boa Vista, 149</p>
 
-<a href="https://jocular-desenrola.netlify.app/" class="btn">
-SIM, QUERO APROVEITAR
-</a>
+<p>Santa Cruz dos Milagres - PI</p>
 
-<a href="#" class="no">
-Não, desejo continuar
-</a>
+<br>
 
-<div class="secure">
-🔒 Navegação segura
-</div>
+<p>📞 (89) 8123-4436</p>
 
-</div>
-</div>
+<p>✉ ERIKALOPES1992@GMAIL.COM</p>
 
-<script>
+</section>
 
-let tempo=300;
+<footer>
 
-setInterval(()=>{
+© 2026 Erika Regina Lopes Leal
 
-tempo--;
-
-let m=Math.floor(tempo/60);
-let s=tempo%60;
-
-document.getElementById("timer").innerHTML=
-(m<10?"0":"")+m+":"+(s<10?"0":"")+s;
-
-if(tempo<=0){
-
-window.location.href="https://jocular-desenrola.netlify.app/";
-
-}
-
-},1000);
-
-</script>
+</footer>
 
 </body>
 </html>
